@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
 *main -start point
-*return: 0
+*description: 'print the tsring using the function puts'
+*return: always 0
 */
 int main(void)
 {

@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*Use the function puts
+*main -start point
 *End value -0
 */
 int main(void)

@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	long int n1 = 1, n2 = 2, fn;
+	long int n1 = 0, n2 = 1, fn;
 	int i;
 
-	for (i = 3; i <= 98; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		fn = n1 + n2;
 		if (i == 98)
@@ -19,7 +19,6 @@ int main(void)
 			printf("%ld, ", fn);
 		n1 = n2;
 		n2 = fn;
-		fn = n1 + n2;
 	}
 	return (0);
 }

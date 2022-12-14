@@ -15,9 +15,8 @@ int main(void)
 		n1 = n2;
 		n2 = fn;
 		if ((n1 % 2) == 0)
-		{
 			sfn += n1;
-		}
-		printf("%ld\n", sfn);
-		return (0);
 	}
+	printf("%ld\n", sfn);
+	return (0);
+}

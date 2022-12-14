@@ -10,7 +10,8 @@ int main(void)
 	long int n1 = 1, n2 = 2;
 	long int fn = n1 + n2;
 
-	printf("%ld, %ld, " n1, n2);
+	printf("%ld, " n1);
+	printf("%ld, " n2);
 	while (count <= 50)
 	{
 		if (count == 50)

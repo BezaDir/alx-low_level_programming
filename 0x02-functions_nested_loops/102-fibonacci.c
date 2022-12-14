@@ -21,8 +21,7 @@ int main(void)
 		n1 = n2;
 		n2 = fn;
 		fn = n1 + n2;
-		count++;
+		count++
 	}
-	printf("\n");
 	return (0);
 }

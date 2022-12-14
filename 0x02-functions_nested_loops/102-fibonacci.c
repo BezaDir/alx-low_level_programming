@@ -7,21 +7,21 @@
 int main(void)
 {
 	int count = 3;
-	int first = 1, second = 2;
-	int next = first + second;
+	long int n1 = 1, n2 = 2;
+	long int fn = n1 + n2;
 
-	printf("%d, ", first);
-	printf("%d, ", second);
+	printf("%ld, %ld", n1, n2);
 	while (count <= 50)
 	{
 		if (count == 50)
-			printf("%d\n", next);
+			printf("%ld\n", fn);
 		else
-			printf("%d, ", next);
-		first = second;
-		second = next;
-		next = first + second;
+			printf("%d, ", fn);
+		n1 = n2;
+		n2 = fn;
+		fn = n1 + n2;
 		count++;
 	}
+	printf("\n");
 	return (0);
 }

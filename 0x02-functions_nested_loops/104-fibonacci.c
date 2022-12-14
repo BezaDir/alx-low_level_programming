@@ -7,18 +7,22 @@
  */
 int main(void)
 {
-	long int n1 = 0, n2 = 1, fn;
-	int i;
+	long int n1 = 1, n2 = 2;
+	long int fn = n1 + n2;
+	int count = 3;
 
-	for (i = 1; i <= 98; i++)
+	printf("%ld, ", n1);
+	printf("%ld, ", n2);
+	while (count <= 98)
 	{
-		fn = n1 + n2;
-		if (i == 98)
+		if (count == 98)
 			printf("%ld\n", fn);
 		else
 			printf("%ld, ", fn);
 		n1 = n2;
 		n2 = fn;
+		fn = n1 + n2;
+		count++;
 	}
 	return (0);
 }

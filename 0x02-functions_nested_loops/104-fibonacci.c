@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long int n1 = 1, n2 = 2 fn;
+	long int n1 = 1, n2 = 2, fn;
 	int i;
 
 	for (i = 3; i <= 98; i++)

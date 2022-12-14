@@ -16,7 +16,7 @@ int main(void)
 		if (count == 50)
 			printf("%ld\n", fn);
 		else
-			printf("%d, ", fn);
+			printf("%ld, ", fn);
 		n1 = n2;
 		n2 = fn;
 		fn = n1 + n2;

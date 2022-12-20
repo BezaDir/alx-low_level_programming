@@ -20,7 +20,7 @@ int _atoi(char *s)
 	while (s[i] >= 48 && s[i] <= 57)
 	{
 		isi = 1;
-		ni = (ni * 10) + (s[c] - '0');
+		ni = (ni * 10) + (s[i] - '0');
 		i++;
 	}
 	if (isi == 1)

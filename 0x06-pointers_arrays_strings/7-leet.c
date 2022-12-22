@@ -9,16 +9,16 @@
 char *leet(char *ch)
 {
 	int i, j;
-	char s1[] = "aAeEoOtTlL";
-	char s2[] = "4433007711";
+	char str1[] = "aAeEoOtTlL";
+	char str2[] = "4433007711";
 
 	for (i = 0; *(ch + i); i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (ch[i] == s1[j])
+			if (ch[i] == str1[j])
 			{
-				ch[i] = s2[j];
+				ch[i] = str2[j];
 			}
 		}
 	}

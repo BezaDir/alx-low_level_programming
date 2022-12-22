@@ -8,24 +8,19 @@
 
 char *leet(char *s)
 {
-	int i = 0, j = 0, l = 5;
-	char s1[5] = {'A', 'E', '0', 'T', 'L'};
-	char s2[5] = {'4', '3', '0', '7', '1'};
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	while (s[i])
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		j = 0;
-
-		while (j < l)
+		for (j = 0; j < 10; j++)
 		{
-			if (s[i] == s1[j] || s[j] - 32 == s1[j])
+			if (s[i] == a[j])
 			{
-				s[i] = s2[j];
+				a[i] = b[j];
 			}
-			j++;
 		}
-		i++;
 	}
 	return (s);
 }
-

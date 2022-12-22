@@ -8,7 +8,7 @@
 
 char *leet(char *s)
 {
-	int i = 0; j = 0, l = 5;
+	int i = 0, j = 0, l = 5;
 	char s1[5] = {'A', 'E', '0', 'T', 'L'};
 	char s2[5] = {'4', '3', '0', '7', '1'};
 
@@ -16,7 +16,7 @@ char *leet(char *s)
 	{
 		j = 0;
 
-		while (j < 1)
+		while (j < l)
 		{
 			if (s[i] == s1[j] || s[j] - 32 == s1[j])
 			{

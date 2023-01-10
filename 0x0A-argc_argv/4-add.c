@@ -2,6 +2,25 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
+/**
+ * check_num - check the string ifit has digit
+ * @s: array
+ * Return: 0 (success)
+ */
+int check_num(char *s)
+{
+	unsigned int count;
+
+	count =  0;
+	while (count < strlen(s))
+	{
+		if (!isdigit(s[count]))
+			return (0);
+		count++;
+	}
+	return (1);
+}
 
 /**
  * main - Prints the sum of args positive numbers
@@ -12,19 +31,22 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, sum = 0;
+	int i, sum = 0, j;
 
-	for (i = 0; i < argc; i++)
+	i = 1;
+	while (i < argc)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		if (check_num(argv[i]))
 		{
-			if (!isdigit(argv[i][j]))
-			{
-				printf("Error\n");
-				return (1);
-			}
+			j = atoi(argv[i]);
+			sum += j;
 		}
-		sum += atoi(argv[i]);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		i++;
 	}
 	printf("%d\n", sum);
 	return (0);

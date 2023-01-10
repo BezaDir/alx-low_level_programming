@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
 		while (num >= cents[i])
 		{
 			ncoins += 1;
+			num -= cents[i];
 		}
 	}
 	printf("%d\n", ncoins);
